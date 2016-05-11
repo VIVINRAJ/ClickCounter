@@ -17,25 +17,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uN-l1-dJL">
-                                <rect key="frame" x="277" y="291" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uN-l1-dJL">
+                                <rect key="frame" x="283" y="285" width="34" height="30"/>
                                 <state key="normal" title="Click"/>
                                 <connections>
                                     <action selector="Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rgT-vo-lX3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDA-Fz-aYZ">
-                                <rect key="frame" x="279" y="230" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDA-Fz-aYZ">
+                                <rect key="frame" x="279" y="224" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tR-cn-LvJ">
+                                <rect key="frame" x="264" y="373" width="73" height="30"/>
+                                <state key="normal" title="ClickDown"/>
+                                <connections>
+                                    <action selector="ClickDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6b-PB-YGC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6tR-cn-LvJ" firstAttribute="top" secondItem="6uN-l1-dJL" secondAttribute="bottom" constant="58" id="Bh0-QV-JOL"/>
                             <constraint firstItem="qDA-Fz-aYZ" firstAttribute="centerX" secondItem="6uN-l1-dJL" secondAttribute="centerX" id="Gbp-4s-eun"/>
                             <constraint firstItem="6uN-l1-dJL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ol3-gd-wop"/>
                             <constraint firstItem="6uN-l1-dJL" firstAttribute="top" secondItem="qDA-Fz-aYZ" secondAttribute="bottom" constant="40" id="die-yK-L91"/>
+                            <constraint firstItem="6tR-cn-LvJ" firstAttribute="centerX" secondItem="6uN-l1-dJL" secondAttribute="centerX" id="ok3-qm-XIH"/>
                             <constraint firstItem="6uN-l1-dJL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yth-gX-pU3"/>
                         </constraints>
                     </view>

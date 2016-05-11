@@ -40,5 +40,9 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func ClickDown(sender: AnyObject) {
+        count = count - 1
+        countLabel.text = "\(count)"   
+    }
 }
 
